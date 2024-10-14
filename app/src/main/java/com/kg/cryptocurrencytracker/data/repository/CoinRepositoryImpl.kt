@@ -53,7 +53,7 @@ class CoinRepositoryImpl @Inject constructor(
                 val price = tickerPriceMap[coinDto.id] ?: 0.0
                 coinDto.toCoin(price)
             }
-            Resource.Success(coins , "get coins")
+            Resource.Success(coins)
         } catch (e: HttpException) {
             Resource.Error("An error occurred: ${e.localizedMessage}")
         } catch (e: IOException) {
@@ -76,7 +76,7 @@ class CoinRepositoryImpl @Inject constructor(
             val tickerDto = api.getTickerById(coinId)
             val ticker = tickerDto.toTicker()
             val coinDetail = coinDetailDto.toCoinDetail(ticker)
-            Resource.Success(coinDetail,"get coin by id")
+            Resource.Success(coinDetail)
         }
         catch (e: HttpException)
         {
@@ -101,7 +101,7 @@ class CoinRepositoryImpl @Inject constructor(
         {
             val tickerDto = api.getTickerById(coinId)
             val ticker = tickerDto.toTicker()
-            Resource.Success(ticker,"ticker by id")
+            Resource.Success(ticker)
         }
         catch (e: HttpException)
         {
@@ -125,7 +125,7 @@ class CoinRepositoryImpl @Inject constructor(
         {
             val tickersDto = api.getTickers()
             val tickers = tickersDto.map { it.toTicker() }
-            Resource.Success(tickers , "Veriler çekildi")
+            Resource.Success(tickers)
         }
         catch (e: HttpException)
         {

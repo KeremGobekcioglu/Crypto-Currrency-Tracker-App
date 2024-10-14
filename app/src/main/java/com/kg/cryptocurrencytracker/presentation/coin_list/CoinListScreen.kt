@@ -45,7 +45,6 @@ fun CoinListScreen(
     viewModel: CoinListViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
-    var isRefreshing by remember { mutableStateOf(false) }
     val snackbarHostState = remember { SnackbarHostState() }
     var showSnackbar by remember { mutableStateOf(false) }
 
