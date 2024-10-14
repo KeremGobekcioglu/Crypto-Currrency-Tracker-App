@@ -18,7 +18,12 @@ import com.kg.cryptocurrencytracker.common.formatPrice
 import com.kg.cryptocurrencytracker.domain.model.Coin
 
 
-
+/**
+ * This composable function is used to display a single item in the list of coins.
+ * It takes a Coin and a lambda function as parameters.
+ * @param coin It is an instance of Coin that represents the coin data.
+ * @param onItemClick It is a lambda function that takes a Coin as a parameter and returns Unit.
+ */
 @Composable
 fun CoinListItem(
     coin: Coin,
@@ -39,7 +44,6 @@ fun CoinListItem(
         )
         Text(
             text = formatPrice(coin.price),
-            // make it bold
             style = MaterialTheme.typography.bodyLarge,
             overflow = TextOverflow.Ellipsis
         )

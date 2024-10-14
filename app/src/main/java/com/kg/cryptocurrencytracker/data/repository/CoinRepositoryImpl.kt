@@ -13,10 +13,25 @@ import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
 
+// i need commetns for kotlin documentation
+/**
+ * This repository implementation class is used to fetch the data from the network.
+ * It implements the CoinRepository interface.
+ * It has three methods: getCoins, getCoinById, and getTickers.
+ * @property api It is an instance of the CoinPaprikaApi interface.
+ * @constructor It takes an instance of the CoinPaprikaApi interface as a parameter.
+ */
+
 class CoinRepositoryImpl @Inject constructor(
     private val api : CoinPaprikaApi
 ) : CoinRepository {
-
+    /**
+     * This method is used to fetch the list of coins.
+     * It returns a Resource object with a list of coins.
+     * If the network call is successful, it returns a Resource.Success object with the list of coins.
+     * If the network call fails, it returns a Resource.Error object with an error message.
+     * @return Resource<List<Coin>> It returns a Resource object with a list of coins.
+     */
     override suspend fun getCoins(): Resource<List<Coin>> {
         return try {
             // ticker da çekilicek ve ordaki price verisi coinlere aktarilacak
@@ -38,7 +53,7 @@ class CoinRepositoryImpl @Inject constructor(
                 val price = tickerPriceMap[coinDto.id] ?: 0.0
                 coinDto.toCoin(price)
             }
-            Resource.Success(coins)
+            Resource.Success(coins , "get coins")
         } catch (e: HttpException) {
             Resource.Error("An error occurred: ${e.localizedMessage}")
         } catch (e: IOException) {
@@ -46,6 +61,14 @@ class CoinRepositoryImpl @Inject constructor(
         }
     }
 
+    /**
+     * This method is used to fetch the details of a coin by its id.
+     * It returns a Resource object with the details of the coin.
+     * If the network call is successful, it returns a Resource.Success object with the details of the coin.
+     * If the network call fails, it returns a Resource.Error object with an error message.
+     * @param coinId It is the id of the coin.
+     * @return Resource<CoinDetail> It returns a Resource object with the details of the coin.
+     */
     override suspend fun getCoinById(coinId: String): Resource<CoinDetail> {
         return try
         {
@@ -53,7 +76,7 @@ class CoinRepositoryImpl @Inject constructor(
             val tickerDto = api.getTickerById(coinId)
             val ticker = tickerDto.toTicker()
             val coinDetail = coinDetailDto.toCoinDetail(ticker)
-            Resource.Success(coinDetail)
+            Resource.Success(coinDetail,"get coin by id")
         }
         catch (e: HttpException)
         {
@@ -65,12 +88,20 @@ class CoinRepositoryImpl @Inject constructor(
         }
     }
 
+    /**
+     * This method is used to fetch the list of tickers.
+     * It returns a Resource object with a list of tickers.
+     * If the network call is successful, it returns a Resource.Success object with the list of tickers.
+     * If the network call fails, it returns a Resource.Error object with an error message.
+     * @param coinId It is the id of the coin.
+     * @return Resource<List<Ticker>> It returns a Resource object with a list of tickers.
+     */
     override suspend fun getTickerById(coinId: String): Resource<Ticker> {
         return try
         {
             val tickerDto = api.getTickerById(coinId)
             val ticker = tickerDto.toTicker()
-            Resource.Success(ticker)
+            Resource.Success(ticker,"ticker by id")
         }
         catch (e: HttpException)
         {
@@ -82,12 +113,19 @@ class CoinRepositoryImpl @Inject constructor(
         }
     }
 
+    /**
+     * This method is used to fetch the list of tickers.
+     * It returns a Resource object with a list of tickers.
+     * If the network call is successful, it returns a Resource.Success object with the list of tickers.
+     * If the network call fails, it returns a Resource.Error object with an error message.
+     * @return Resource<List<Ticker>> It returns a Resource object with a list of tickers.
+     */
     override suspend fun getTickers(): Resource<List<Ticker>> {
         return try
         {
             val tickersDto = api.getTickers()
             val tickers = tickersDto.map { it.toTicker() }
-            Resource.Success(tickers)
+            Resource.Success(tickers , "Veriler çekildi")
         }
         catch (e: HttpException)
         {

@@ -2,16 +2,17 @@
 accompanistFlowlayout = "0.30.0"
 accompanistFlowlayoutVersion = "0.17.0"
 accompanistPullrefresh = "0.28.0"
+accompanistSwiperefresh = "0.28.0"
 activityComposeVersion = "1.6.1"
-agp = "8.5.0"
+agp = "8.5.2"
 androidxJunit = "1.2.1"
 appcompatVersion = "1.7.0"
 converterGson = "2.9.0"
 coreKtxVersion = "1.13.1"
 espressoCoreVersion = "3.6.1"
-gradle = "7.0.4"
-hiltAndroid = "2.51.1"
-hiltAndroidGradlePlugin = "2.38.1"
+gradle = "8.5.2"
+hiltAndroid = "2.48"
+hiltAndroidGradlePlugin = "2.40.1"
 hiltNavigationCompose = "1.2.0"
 kotlin = "1.9.0"
 coreKtx = "1.10.1"
@@ -42,6 +43,7 @@ uiVersion = "1.6.8"
 accompanist-flowlayout-v0300 = { module = "com.google.accompanist:accompanist-flowlayout", version.ref = "accompanistFlowlayout" }
 accompanist-pullrefresh = { module = "com.google.accompanist:accompanist-pullrefresh", version.ref = "accompanistPullrefresh" }
 accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistFlowlayout" }
+accompanist-swiperefresh-v0280 = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 androidx-activity-compose-v161 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

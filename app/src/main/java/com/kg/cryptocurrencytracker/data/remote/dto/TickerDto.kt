@@ -3,6 +3,9 @@ package com.kg.cryptocurrencytracker.data.remote.dto
 import com.google.gson.annotations.SerializedName
 import com.kg.cryptocurrencytracker.domain.model.Ticker
 
+/**
+ * It is a data transfer object class that represents the ticker.
+ */
 data class TickerDto(
     @SerializedName("id")
     val id: String,
@@ -25,7 +28,9 @@ data class TickerDto(
     @SerializedName("quotes")
     val quotes: Map<String, Quote>
 )
-
+/**
+ * It is a data class that represents the quote.
+ */
 data class Quote(
     @SerializedName("price")
     val price: Double,
@@ -63,6 +68,9 @@ data class Quote(
     val percentFromPriceAth: Double
 )
 
+/**
+ * It is an extension function that converts the TickerDto to Ticker.
+ */
 fun TickerDto.toTicker(): Ticker {
     val usdQuote = quotes["USD"] ?: error("USD quote not found")
     return Ticker(

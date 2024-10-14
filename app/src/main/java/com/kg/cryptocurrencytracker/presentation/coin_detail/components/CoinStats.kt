@@ -19,6 +19,26 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.kg.cryptocurrencytracker.common.formatPrice
 
+/**
+ * This composable function is used to display the statistics of a coin.
+ * It takes various parameters such as price, total supply, max supply, etc.
+ * @param price It is a double that represents the price of the coin.
+ * @param totalSupply It is a long that represents the total supply of the coin.
+ * @param maxSupply It is a long that represents the maximum supply of the coin.
+ * @param firstDataAt It is a string that represents the date when the first data was recorded.
+ * @param lastUpdated It is a string that represents the date when the data was last updated.
+ * @param volume24h It is a double that represents the volume of the coin in the last 24 hours.
+ * @param marketCap It is a double that represents the market capitalization of the coin.
+ * @param marketCapChange24h It is a double that represents the change in market capitalization in the last 24 hours.
+ * @param percentChange1h It is a double that represents the percentage change in the price in the last 1 hour.
+ * @param percentChange24h It is a double that represents the percentage change in the price in the last 24 hours.
+ * @param percentChange7d It is a double that represents the percentage change in the price in the last 7 days.
+ * @param percentChange30d It is a double that represents the percentage change in the price in the last 30 days.
+ * @param percentChange1y It is a double that represents the percentage change in the price in the last 1 year.
+ * @param athPrice It is a double that represents the all-time high price of the coin.
+ * @param athDate It is a string that represents the date when the all-time high price was recorded.
+ * @param percentFromPriceAth It is a double that represents the percentage change from the all-time high price.
+ */
 @Composable
 fun CoinStats(
     price : Double,

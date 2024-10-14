@@ -30,6 +30,12 @@ import com.kg.cryptocurrencytracker.presentation.coin_detail.components.CoinStat
 import com.kg.cryptocurrencytracker.presentation.coin_detail.components.CoinTag
 import com.kg.cryptocurrencytracker.presentation.coin_detail.components.TeamListItem
 
+/**
+ * This composable function is used to display the CoinDetail screen.
+ * It takes a CoinDetailViewModel as a parameter.
+ * @param viewModel It is an instance of CoinDetailViewModel that represents the view model of the screen.
+ * @constructor It creates a composable function that displays the CoinDetail screen.
+ */
 @Composable
 fun CoinDetailScreen(
     viewModel: CoinDetailViewModel = hiltViewModel()
@@ -52,8 +58,6 @@ fun CoinDetailScreen(
                                 style = MaterialTheme.typography.headlineMedium,
                                 modifier = Modifier.weight(8f)
                             )
-                            // price with formatting
-                            // active or not
                             Text(
                                 text = if (coin.isActive) "active" else "inactive",
                                 color = if (coin.isActive) Color.Green else Color.Red,

@@ -5,6 +5,9 @@ import com.google.gson.annotations.SerializedName
 import com.kg.cryptocurrencytracker.domain.model.CoinDetail
 import com.kg.cryptocurrencytracker.domain.model.Ticker
 
+/**
+ * It is a data transfer object class that represents the coin detail.
+ */
 data class CoinDetailDto(
     @SerializedName("description")
     val description: String,
@@ -56,6 +59,9 @@ data class CoinDetailDto(
     val whitepaper: Whitepaper
 )
 
+/**
+ * It is an extension function that converts the CoinDetailDto to CoinDetail.
+ */
 fun CoinDetailDto.toCoinDetail(ticker: Ticker): CoinDetail {
     return CoinDetail(
         coinId = id,

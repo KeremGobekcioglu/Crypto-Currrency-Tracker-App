@@ -12,6 +12,11 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import com.kg.cryptocurrencytracker.data.remote.dto.TeamMember
 
+/**
+ * This composable function is used to display a team member.
+ * It takes a TeamMember as a parameter.
+ * @param teamMember It is an instance of TeamMember that represents the team member data.
+ */
 @Composable
 fun TeamListItem(
     teamMember: TeamMember,

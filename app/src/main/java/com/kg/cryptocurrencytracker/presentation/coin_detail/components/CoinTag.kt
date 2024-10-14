@@ -11,7 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
-
+/**
+ * This composable function is used to display a coin tag.
+ * It takes a string as a parameter.
+ * @param tag It is a string that represents the tag of the coin.
+ */
 @Composable
 fun CoinTag(
     tag: String

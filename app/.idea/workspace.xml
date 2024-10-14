@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397e3918-5ab1-48de-a75e-e41f0260dd03" name="Changes" comment="" />
+    <list default="true" id="397e3918-5ab1-48de-a75e-e41f0260dd03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_detail/MockDetailScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/common/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/common/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/common/FormatPrice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/common/FormatPrice.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/common/Resource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/common/Resource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/CoinPaprikaApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/CoinPaprikaApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/dto/CoinDetailDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/dto/CoinDetailDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/dto/CoinDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/dto/CoinDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/dto/TickerDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/remote/dto/TickerDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/repository/CoinRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/data/repository/CoinRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/dependency_injection/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/dependency_injection/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/domain/repository/CoinRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/domain/repository/CoinRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/domain/use_cases/get_coin/GetCoinUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/domain/use_cases/get_coin/GetCoinUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/domain/use_cases/get_coins/GetCoinsUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/domain/use_cases/get_coins/GetCoinsUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/Screen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/Screen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_detail/CoinDetailScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_detail/CoinDetailScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_detail/CoinDetailViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_detail/CoinDetailViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_list/CoinListScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_list/CoinListScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_list/CoinListState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_list/CoinListState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_list/CoinListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kg/cryptocurrencytracker/presentation/coin_list/CoinListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/libs.versions.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,19 +39,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2jeq4Dt1qookRTLzlfIYWOlRhSN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,6 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721757700150</updated>
       <workItem from="1721757705921" duration="321000" />
+      <workItem from="1728149531439" duration="6000" />
+      <workItem from="1728483457005" duration="1000" />
     </task>
     <servers />
   </component>
