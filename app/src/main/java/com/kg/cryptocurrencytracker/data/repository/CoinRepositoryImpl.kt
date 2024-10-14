@@ -13,7 +13,6 @@ import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
 
-// i need commetns for kotlin documentation
 /**
  * This repository implementation class is used to fetch the data from the network.
  * It implements the CoinRepository interface.
@@ -37,12 +36,6 @@ class CoinRepositoryImpl @Inject constructor(
             // ticker da çekilicek ve ordaki price verisi coinlere aktarilacak
             val coinsDto = api.getCoins()
             val tickersDto = api.getTickers()
-//            val coins = coinsDto.map { coinDto -> // Iterate over each coinDto in coinsDto
-//                val price = tickersDto.find { it.id == coinDto.id } // Find the corresponding tickerDto in tickersDto where the id matches
-//                    ?.quotes?.get("USD")?.price // Extract the price from the quotes map for the "USD" key
-//                    ?: 0.0 // Default to 0.0 if the price is not found
-//                coinDto.toCoin(price) // Convert coinDto to Coin using the toCoin function, passing the extracted price
-//            }
             val tickers = tickersDto.map { it.toTicker() }
 
             // Create a map of ticker prices for quick lookup
